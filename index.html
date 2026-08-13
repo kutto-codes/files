@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CyberPath — Learn Cybersecurity by Doing</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="page-shell">
+    <header class="topbar">
+      <div class="brand">
+        <div class="brand-mark">C</div>
+        <div>
+          <p class="brand-name">CyberPath</p>
+          <span class="brand-tag">Learn cybersecurity by doing</span>
+        </div>
+      </div>
+      <a class="button button-primary" href="#calculator">Check my readiness</a>
+    </header>
+
+    <section class="hero-section">
+      <div class="hero-copy">
+        <span class="eyebrow">Cybersecurity learning platform</span>
+        <h1>Go from your first bash script to your first CTF flag.</h1>
+        <p>CyberPath is a guided, hands-on path through cybersecurity fundamentals — Linux and bash, networking, web app security, and offensive/defensive basics — with labs instead of slides.</p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="#calculator">Try the readiness estimator</a>
+          <a class="button button-secondary" href="#features">See the tracks</a>
+        </div>
+        <div class="hero-metrics">
+          <div>
+            <strong>6</strong>
+            <span>learning tracks</span>
+          </div>
+          <div>
+            <strong>120+</strong>
+            <span>hands-on labs</span>
+          </div>
+          <div>
+            <strong>85%</strong>
+            <span>lab completion rate</span>
+          </div>
+        </div>
+      </div>
+      <div class="hero-panel">
+        <div class="panel-card">
+          <p class="panel-label">Platform snapshot</p>
+          <h2>CyberPath turns study time into real skill.</h2>
+          <p>Every module pairs a short concept explainer with a real terminal lab, so you're never just reading about a tool — you're using it.</p>
+        </div>
+        <div class="panel-card panel-alt">
+          <div>
+            <span class="panel-tag">Beginner path</span>
+            <h3>Bash, Linux fundamentals, networking basics</h3>
+          </div>
+          <div>
+            <span class="panel-tag">Next up</span>
+            <h3>Web app security, offensive tooling, defensive monitoring</h3>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="features">
+      <div class="section-heading">
+        <span class="eyebrow">Learning tracks</span>
+        <h2>Structured, in order, from fundamentals to offense/defense</h2>
+        <p>Each track builds on the last — start with the command line, end up comfortable running a scoped assessment or reading an intrusion alert.</p>
+      </div>
+      <div class="feature-grid">
+        <article class="feature-card">
+          <h3>Linux &amp; bash fundamentals</h3>
+          <p>Shell navigation, permissions, piping, scripting — the base layer almost every other security skill sits on top of.</p>
+        </article>
+        <article class="feature-card">
+          <h3>Networking &amp; protocols</h3>
+          <p>Subnetting, TCP/IP, DNS, and reading real packet captures in Wireshark until traffic stops looking like noise.</p>
+        </article>
+        <article class="feature-card">
+          <h3>Hands-on labs, not videos</h3>
+          <p>Every concept ends in a terminal task graded automatically, plus optional CTF-style challenges for extra practice.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section calculator-section" id="calculator">
+      <div class="section-heading">
+        <span class="eyebrow">Track your progress</span>
+        <h2>Readiness estimator</h2>
+        <p>Enter where you're at and get an honest estimate of your readiness level and how long you've got left at your current pace.</p>
+      </div>
+      <div class="calculator-shell">
+        <form class="calculator-form" onsubmit="return false;">
+          <label>
+            Modules completed (out of 40)
+            <input id="modulesCompleted" type="number" min="0" max="40" step="1" value="12" />
+          </label>
+          <label>
+            Average quiz score (%)
+            <input id="quizScore" type="number" min="0" max="100" step="1" value="78" />
+          </label>
+          <label>
+            Practice labs / CTF challenges completed
+            <input id="labsCompleted" type="number" min="0" step="1" value="9" />
+          </label>
+          <label>
+            Study hours per week
+            <input id="hoursPerWeek" type="number" min="1" step="0.5" value="6" />
+          </label>
+          <button id="calculateBtn" class="button button-primary" type="button">Calculate readiness</button>
+        </form>
+        <div class="calculator-result" id="result"></div>
+      </div>
+      <div class="insight-grid">
+        <div class="insight-card">
+          <h3>Consistency beats cramming</h3>
+          <p>A steady 5–7 hours a week compounds faster than occasional long weekend sessions — retention drops fast without spaced repetition.</p>
+        </div>
+        <div class="insight-card">
+          <h3>Labs over lectures</h3>
+          <p>Time in a real terminal solving a problem builds recall that passively reading or watching rarely does.</p>
+        </div>
+        <div class="insight-card">
+          <h3>Track what you can't remember</h3>
+          <p>Keep a running list of concepts you had to look up twice — that list is your real study plan.</p>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <p>• CyberPath learning project • a guided, hands-on path into cybersecurity.</p>
+      <p><em><b>© 2026 CyberPath. Built as a learning project.</b></em></p>
+    </footer>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
