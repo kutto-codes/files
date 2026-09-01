@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cart | Veloura Fashion</title>
+    <meta name="description" content="Review items in your shopping cart at Veloura Fashion." />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="site-shell">
+      <header class="topbar">
+        <div class="brand-wrap">
+          <div class="brand-mark">V</div>
+          <div>
+            <div class="brand-name">Veloura</div>
+            <div class="brand-tag">Fashion for every lifestyle</div>
+          </div>
+        </div>
+
+        <nav class="main-nav" aria-label="Main navigation">
+          <a href="index.html">Home</a>
+          <a href="shop.html">Shop</a>
+          <a href="product.html">Product</a>
+          <a href="index.html#categories">Categories</a>
+          <a href="index.html#about">About</a>
+          <a href="login.html">Login</a>
+        </nav>
+
+        <div class="top-actions">
+          <a class="ghost-button" href="login.html">Login</a>
+          <a class="cart-button" href="cart.html">Cart (2)</a>
+        </div>
+      </header>
+
+      <main class="cart-page">
+        <section class="cart-heading">
+          <span class="eyebrow dark">Your bag</span>
+          <h1>Shopping cart</h1>
+        </section>
+
+        <section class="cart-layout">
+          <div class="cart-items">
+            <article class="cart-item">
+              <div class="cart-thumb thumb-one"></div>
+              <div class="cart-details">
+                <h2>Summer Linen Set</h2>
+                <p>Women • Size M • Sand</p>
+                <div class="cart-meta">
+                  <span>$89</span>
+                  <button type="button">Remove</button>
+                </div>
+              </div>
+            </article>
+
+            <article class="cart-item">
+              <div class="cart-thumb thumb-two"></div>
+              <div class="cart-details">
+                <h2>Urban Runner</h2>
+                <p>Shoes • Size 8 • White</p>
+                <div class="cart-meta">
+                  <span>$92</span>
+                  <button type="button">Remove</button>
+                </div>
+              </div>
+            </article>
+          </div>
+
+          <aside class="summary-box">
+            <h2>Order summary</h2>
+            <div class="summary-row">
+              <span>Subtotal</span>
+              <strong>$181</strong>
+            </div>
+            <div class="summary-row">
+              <span>Shipping</span>
+              <strong>Free</strong>
+            </div>
+            <div class="summary-row total">
+              <span>Total</span>
+              <strong>$181</strong>
+            </div>
+            <button class="primary-button wide" type="button">Checkout</button>
+          </aside>
+        </section>
+      </main>
+
+      <footer class="footer">
+        <div class="footer-brand">
+          <div class="brand-mark small">V</div>
+          <span>Veloura Fashion</span>
+        </div>
+        <p>Style for every age, every occasion, and every season.</p>
+        <p>© <span id="year"></span> Veloura. All rights reserved.</p>
+      </footer>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login | Veloura Fashion</title>
+    <meta name="description" content="Login to your Veloura Fashion account and continue shopping." />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="site-shell">
+      <header class="topbar">
+        <div class="brand-wrap">
+          <div class="brand-mark">V</div>
+          <div>
+            <div class="brand-name">Veloura</div>
+            <div class="brand-tag">Fashion for every lifestyle</div>
+          </div>
+        </div>
+
+        <nav class="main-nav" aria-label="Main navigation">
+          <a href="index.html">Home</a>
+          <a href="shop.html">Shop</a>
+          <a href="product.html">Product</a>
+          <a href="index.html#categories">Categories</a>
+          <a href="index.html#about">About</a>
+          <a href="login.html">Login</a>
+        </nav>
+
+        <div class="top-actions">
+          <a class="ghost-button" href="shop.html">Shop now</a>
+          <a class="cart-button" href="cart.html">Cart (2)</a>
+        </div>
+      </header>
+
+      <main class="login-page">
+        <section class="login-panel left-panel">
+          <span class="eyebrow dark">Welcome back</span>
+          <h1>Shop smarter with your account.</h1>
+          <p>
+            Save your favourites, track orders, and keep shopping for the whole family with faster checkout.
+          </p>
+          <ul class="login-benefits">
+            <li>Favourite products saved</li>
+            <li>Fast checkout for repeat orders</li>
+            <li>Exclusive deals and new arrivals</li>
+          </ul>
+        </section>
+
+        <section class="login-panel form-panel">
+          <div class="login-box">
+            <div class="auth-tabs" role="tablist" aria-label="Authentication tabs">
+              <button type="button" class="auth-tab active" data-auth-tab="login">Sign in</button>
+              <button type="button" class="auth-tab" data-auth-tab="signup">New member signup</button>
+            </div>
+
+            <div class="auth-form active" data-auth-form="login">
+              <span class="eyebrow dark">Member login</span>
+              <h2>Welcome back</h2>
+              <form id="loginForm">
+                <label>
+                  Email address
+                  <input type="email" id="emailInput" placeholder="you@example.com" required />
+                </label>
+                <label>
+                  Password
+                  <input type="password" id="passwordInput" placeholder="Enter your password" required />
+                </label>
+                <button class="primary-button wide" type="submit">Login to shop</button>
+              </form>
+            </div>
+
+            <div class="auth-form" data-auth-form="signup">
+              <span class="eyebrow dark">Create account</span>
+              <h2>Join Veloura</h2>
+              <form id="signupForm">
+                <label>
+                  Full name
+                  <input type="text" id="signupName" placeholder="Your full name" required />
+                </label>
+                <label>
+                  Email address
+                  <input type="email" id="signupEmail" placeholder="you@example.com" required />
+                </label>
+                <label>
+                  Password
+                  <input type="password" id="signupPassword" placeholder="Create a password" required />
+                </label>
+                <button class="primary-button wide" type="submit">Create account</button>
+              </form>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <footer class="footer">
+        <div class="footer-brand">
+          <div class="brand-mark small">V</div>
+          <span>Veloura Fashion</span>
+        </div>
+        <p>Style for every age, every occasion, and every season.</p>
+        <p>© <span id="year"></span> Veloura. All rights reserved.</p>
+      </footer>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
